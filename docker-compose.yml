@@ -4,8 +4,10 @@ version: '2'
 services: 
   jianyu: 
     build: ./Jianyu
+    container_name: jianyu
     environment: 
         - VIRTUAL_HOST=jianyu.familyoffeng.us
+    image: jianyu
     network_mode: "bridge"
     volumes: 
         - Jianyu:/usr/share/nginx/html
