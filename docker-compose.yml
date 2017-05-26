@@ -5,6 +5,6 @@ services:
   jianyu: 
     build: .
     volumes: 
-        - Jianyu: /usr/share/nginx/html
+        - Jianyu:/usr/share/nginx/html
     environment: 
-        VIRTUAL_HOST: jianyu.familyoffeng.us
+        - VIRTUAL_HOST=jianyu.familyoffeng.us
