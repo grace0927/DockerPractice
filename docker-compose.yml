@@ -1,0 +1,10 @@
+# api version
+version '2'
+
+services:
+  jianyu:
+    build: .
+    volumes:
+        - Jianyu:/usr/share/nginx/html
+    environment:
+        VIRTUAL_HOST:jianyu.familyoffeng.us
