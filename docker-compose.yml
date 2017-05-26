@@ -11,4 +11,4 @@ services:
         - Jianyu:/usr/share/nginx/html
 
 volumes:
-  Jianyu
+  Jianyu:
