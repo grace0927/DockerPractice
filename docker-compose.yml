@@ -11,6 +11,16 @@ services:
     network_mode: "bridge"
     volumes: 
         - Jianyu:/usr/share/nginx/html
+  api: 
+    build: ./api
+    container_name: api
+    environment: 
+        - VIRTUAL_HOST=api.familyoffeng.us
+    image: api
+    network_mode: "bridge"
+    volumes:
+        - api:/usr/share/nginx/html
 
 volumes:
   Jianyu:
+  api:
