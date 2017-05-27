@@ -6,7 +6,7 @@ services:
     build: ./Jianyu
     container_name: jianyu
     environment: 
-        - VIRTUAL_HOST=jianyu.familyoffeng.us
+        - VIRTUAL_HOST=jianyu.familyoffeng.us,familyoffeng.us
     image: jianyu
     network_mode: "bridge"
     volumes: 
